@@ -1,0 +1,6 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>局域网摄像头 · 查看</title><link rel="stylesheet" href="/style.css"></head>
+<body><main><h1>查看摄像头</h1><p class="lead">输入远端页面显示的房间号和 PIN。</p><section class="panel">
+  <div id="form" class="form"><label>访问密码<input id="password" type="password" autocomplete="current-password"></label><label>房间号<input id="roomInput" maxlength="6" autocomplete="off"></label><label>6 位 PIN<input id="pinInput" maxlength="6" inputmode="numeric" autocomplete="off"></label><button id="connect">连接</button></div>
+  <button id="disconnect" class="secondary" hidden>断开连接</button><p id="status" class="status">尚未连接</p>
+  <video id="video" autoplay playsinline controls></video>
+</section></main><script type="module" src="/viewer.js"></script></body></html>

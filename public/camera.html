@@ -1,0 +1,8 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>局域网摄像头 · 远端</title><link rel="stylesheet" href="/style.css"></head>
+<body><main><h1>远端摄像头</h1><p class="lead">此页面必须在连接摄像头的电脑上，通过 localhost 打开。</p><section class="panel">
+  <div class="form"><label>访问密码<input id="password" type="password" autocomplete="current-password"></label><button id="start">启用摄像头</button><button id="stop" class="secondary" disabled>停止共享</button></div>
+  <p id="status" class="status">摄像头尚未启用</p>
+  <div id="share" class="share" hidden><span>房间号<br><b id="room"></b></span><span>PIN<br><b id="pin"></b></span></div>
+  <video id="preview" autoplay muted playsinline></video>
+  <p class="privacy">视频不会由本服务录制。浏览器摄像头指示灯亮起时代表正在共享；关闭本页或点“停止共享”会立即停用摄像头。</p>
+</section></main><script type="module" src="/camera.js"></script></body></html>
